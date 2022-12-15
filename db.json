@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "danielebenedetto@mediagroup98.com",
+      "password": "$2a$10$e2DIdnF.OrLPp/avmvO9De0J4Dg4o0h4prXOnBGn6s3JE.TYw2hGC",
+      "id": 1
+    },
+    {
+      "email": "daniele.benedetto@outlook.it",
+      "password": "$2a$10$Wlu4WUr9qJZOnWoDsDKjSeXraYoKKXivhxKDS.45IpTPMQIk/R9IS",
+      "fullName": "Daniele",
+      "username": "daniele.benedetto@hotmail.it",
+      "id": 2
+    }
+  ]
+}

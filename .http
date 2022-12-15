@@ -1,0 +1,8 @@
+POST http://localhost:3001/register
+content-type: application/json
+
+{
+"email" : "danielebenedetto@mediagroup98.com",
+"password": "tdsotm1"
+}
+
