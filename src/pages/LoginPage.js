@@ -8,9 +8,8 @@ import FormLogin from '../components/FormLogin';
 import Link from '../components/ui/Link';
 import Logo from '../components/ui/Logo';
 
-import Container from '../components/layouts/Container';
-
 import LogoImage from '../images/logo.png';
+import FormContainer from '../components/layouts/FormContainer';
 
 const LoginPage = () => {
 
@@ -50,7 +49,7 @@ const LoginPage = () => {
 
   return (
     <div className="LoginPage">
-      <Container>
+      <FormContainer>
         <Logo src={LogoImage}/>
         <FormLogin 
           onLogin={(f) => handleLogin(f)}
@@ -61,14 +60,14 @@ const LoginPage = () => {
           href='/lost-password'
           styleLink='default'
         />
-      </Container>
-      <Container>
+      </FormContainer>
+      <FormContainer>
         <Link 
           title='Non hai un account? Iscriviti'
           href='/register'
           styleLink='default'
         />      
-      </Container>
+      </FormContainer>
     </div>
   );
 }

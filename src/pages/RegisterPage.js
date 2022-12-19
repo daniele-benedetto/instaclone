@@ -6,11 +6,11 @@ import { postRegisterService } from '../services/api/auth.service';
 import FormRegistration from '../components/FormRegistration';
 
 import Logo from '../components/ui/Logo';
+import Link from '../components/ui/Link';
 
-import Container from '../components/layouts/Container';
+import FormContainer from '../components/layouts/FormContainer';
 
 import LogoImage from '../images/logo.png';
-import Link from '../components/ui/Link';
 
 const RegisterPage = () => {
 
@@ -50,7 +50,7 @@ const RegisterPage = () => {
 
   return (
     <div className="LoginPage">
-      <Container>
+      <FormContainer>
         <Logo src={LogoImage}/>
         <h2 className='font-bold text-center mb-5'>Iscriviti per vedere le foto e i video dei tuoi amici.</h2>
         <FormRegistration
@@ -58,7 +58,7 @@ const RegisterPage = () => {
           error={error}
         />
         <Link href='/login' title="Hai già un account?" />
-      </Container>
+      </FormContainer>
     </div>
   );
 }

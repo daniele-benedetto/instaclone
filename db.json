@@ -12,5 +12,21 @@
       "username": "daniele.benedetto@hotmail.it",
       "id": 2
     }
+  ],
+  "posts": [
+    {
+      "title": "Post di test",
+      "content": "Contenuto di test",
+      "id": 1
+    },
+    {
+      "title": "dedede",
+      "content": "dededed",
+      "position": "",
+      "image": "ededed",
+      "time": "2022-12-19T17:00:52.662Z",
+      "userId": "",
+      "id": 2
+    }
   ]
 }

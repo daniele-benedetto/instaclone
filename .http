@@ -6,3 +6,12 @@ content-type: application/json
 "password": "tdsotm1"
 }
 
+POST http://localhost:3002/posts
+content-type: application/json
+
+{
+"title" : "Titolo in post",
+"password": "Contenuto in post"
+}
+
+GET http://localhost:3002/posts

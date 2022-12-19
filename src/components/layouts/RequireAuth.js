@@ -5,11 +5,10 @@ const RequireAuth = ({children}) => {
   const auth = localStorage.getItem('auth');
 
   if(!auth){
-      return <Navigate to="/login" replace />;
+    return <Navigate to="/login" replace />;
   }
 
-  return <section>{children}</section>
-
+  return <main>{children}</main>
 }
 
 export default RequireAuth

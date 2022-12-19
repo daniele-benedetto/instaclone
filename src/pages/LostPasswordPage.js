@@ -6,7 +6,7 @@ import FormLostPassword from '../components/FormLostPassword';
 import Link from '../components/ui/Link';
 import Logo from '../components/ui/Logo';
 
-import Container from '../components/layouts/Container';
+import FormContainer from '../components/layouts/FormContainer';
 
 import LogoImage from '../images/logo.png';
 
@@ -38,15 +38,15 @@ const LoginPage = () => {
 
   return (
     <div className="LoginPage">
-      <Container>
+      <FormContainer>
         <Logo src={LogoImage}/>
         <h2 className='text-center font-bold mb-3'>Problemi di accesso?</h2>
         <p className='text-center text-xs mb-3'>Inserisci il tuo indirizzo e-mail, il numero di telefono o il nome utente e ti invieremo un link per accedere di nuovo al tuo account.</p>
         <FormLostPassword
           onLostPassword={(f) => handleLostPassword(f)}
         />
-      </Container>
-      <Container>
+      </FormContainer>
+      <FormContainer>
         <Link 
           title='Crea un nuovo account'
           href='/register'
@@ -58,7 +58,7 @@ const LoginPage = () => {
           href='/login'
           styleLink='default'
         />         
-      </Container>
+      </FormContainer>
     </div>
   );
 }

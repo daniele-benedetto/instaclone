@@ -1,5 +1,5 @@
 import { http } from "../http";
-import { loginUrl, registerUrl, getUserUrl } from "../url";
+import { loginUrl, registerUrl } from "../url";
 
 export const postLoginService = async (loginPayload) => {
     const { data } = await http.post(loginUrl, loginPayload);
