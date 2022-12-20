@@ -1,32 +1,27 @@
 import React from 'react';
 
+import HomeIcon from '../icons/HomeIcon';
+import PlusIcons from '../icons/PlusIcons';
+import SearchIcon from '../icons/SearchIcon';
+
 import NavContainer from '../layouts/NavContainer';
 import NavItem from './NavItem';
 
 const navItem = [
   {
     id: 1,
-    title: 'Home',
     slug: '/',
-    icon: '',
+    icon: <HomeIcon />,
   },
   {
     id:2,
-    title: 'Home',
     slug: '/',
-    icon: '',
+    icon: <SearchIcon />,
   },
   {
     id:3,
-    title: 'Home',
-    slug: '/',
-    icon: '',
-  },
-  {
-    id:4,
-    title: 'Home',
-    slug: '/',
-    icon: '',
+    slug: '/add-post',
+    icon: <PlusIcons />,
   },
 ];
 

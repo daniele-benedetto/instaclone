@@ -7,24 +7,25 @@ import NavItem from './NavItem';
 
 import LogoImage from '../../images/logo.png';
 
+import PlusIcons from '../icons/PlusIcons';
+import HeartIcon from '../icons/HeartIcon';
+import SendIcon from '../icons/SendIcon';
+
 const navItem = [
   {
     id: 1,
-    title: 'Home',
-    slug: '/',
-    icon: '',
+    slug: '/add-post',
+    icon: <PlusIcons />,
   },
   {
     id:2,
-    title: 'Home',
     slug: '/',
-    icon: '',
+    icon: <HeartIcon />,
   },
   {
     id:3,
-    title: 'Home',
     slug: '/',
-    icon: '',
+    icon: <SendIcon />,
   },
 ];
 
@@ -39,7 +40,6 @@ const TopNav = () => {
           return (
             <NavItem 
               key={item.id} 
-              title={item.title} 
               slug={item.slug} 
               icon={item.icon} 
             />

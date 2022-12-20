@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-import FormPost from '../components/FormPost';
 
 import RequireAuth from '../components/layouts/RequireAuth';
 import { postRegisterPost } from '../services/api/posts.service';
 
 import { useNavigate } from 'react-router-dom';
+
 import FormContainer from '../components/layouts/FormContainer';
+
+import FormAddPost from '../components/FormAddPost';
 
 const PostPage = () => {
   
@@ -32,7 +34,7 @@ const PostPage = () => {
   <RequireAuth>
     <div className='PostPage'>
       <FormContainer>
-        <FormPost
+        <FormAddPost
           onAddPost={(f) => onAddPost(f)}
           error={error}
         />

@@ -9,10 +9,9 @@ const Posts = () => {
 
   useEffect(() => {
     getPost().then((response)=> {
-      console.log(response)
       setPosts(response);
-    }).catch(() => {
-      console.log('Non ci sono post presenti')
+    }).catch((error) => {
+      console.log(error)
     });
   }, [])
 
@@ -27,6 +26,7 @@ const Posts = () => {
             position='Asheville, North Carolina'
             image='https://picsum.photos/id/244/900/900'
             likes={55}
+            caption={post.caption}
           />
         );
       })}

@@ -4,7 +4,7 @@ const NavContainer = ({styleNav, children}) => {
 
   const bottomNav = "flex fixed inset-x-0 bottom-0 z-10 bg-white shadow p-3 width-full justify-between";
   const topNav = "flex fixed inset-x-0 top-0 z-10 bg-white shadow p-3 justify-between";
-  const storiesNav = "flex justify-start overflow-x-scroll mt-16 p-2 w-auto";
+  const storiesNav = "flex justify-start overflow-x-scroll mt-20 p-2 w-auto";
 
   let classes= "";
 

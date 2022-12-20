@@ -11,6 +11,13 @@
       "fullName": "Daniele",
       "username": "daniele.benedetto@hotmail.it",
       "id": 2
+    },
+    {
+      "email": "daniele.benedetto@hotmail.it",
+      "password": "$2a$10$/F7TkwDwzraTljXisD4IYeqDGARSiSm8gUvZH42aUbqWNOT98QRbG",
+      "fullName": "Daniele Benedetto",
+      "username": "daniele.benedetto",
+      "id": 3
     }
   ],
   "posts": [
@@ -27,6 +34,24 @@
       "time": "2022-12-19T17:00:52.662Z",
       "userId": "",
       "id": 2
+    },
+    {
+      "caption": "ciaoooo ",
+      "time": "2022-12-19T18:49:47.751Z",
+      "userId": "",
+      "id": 3
+    },
+    {
+      "caption": "ue",
+      "time": "2022-12-19T19:23:12.939Z",
+      "userId": "",
+      "id": 4
+    },
+    {
+      "caption": "fefrfrfrr",
+      "time": "2022-12-19T19:27:40.627Z",
+      "userId": "",
+      "id": 5
     }
   ]
 }
