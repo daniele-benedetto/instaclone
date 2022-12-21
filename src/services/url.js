@@ -1,5 +1,21 @@
 const loginUrl = "/login";
 const registerUrl = "/register";
 const postsUrl = "/posts";
+const usersUrl = "/users"
 
-export { loginUrl ,registerUrl, postsUrl};
+const generateUrl = (url, params = []) => {
+	const urlServerWithAuth = `${process.env.REACT_APP_URL}${url}?`;
+
+	if(params && params.length > 0 ) {
+		let paramsUrl = new URLSearchParams();
+
+		params.forEach(param => {
+			paramsUrl.append(param.key, param.value);
+		});
+		return urlServerWithAuth + `&${paramsUrl.toString()}`;
+	}
+
+	return urlServerWithAuth;
+}
+
+export { loginUrl ,registerUrl, postsUrl, usersUrl, generateUrl};

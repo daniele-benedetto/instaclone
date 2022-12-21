@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from './ui/Button';
 import Input from './ui/Input';
 
-const FormLostPassword = ({onLostPassword,error}) => {
+const FormLostPassword = ({onLostPassword,error,message}) => {
 
   const [form, setForm] = useState({
     email: '',
@@ -33,7 +33,7 @@ const FormLostPassword = ({onLostPassword,error}) => {
 
   const handleLostPassword = () => {
     if(handleValidForm()){
-      onLostPassword(form)
+      onLostPassword(form.email)
     }
   }
 
@@ -55,8 +55,8 @@ const FormLostPassword = ({onLostPassword,error}) => {
         styleBtn="primary"
         onClick={handleLostPassword}
       />
-
       {error && <div>{error}</div>}
+      {message && <div>{message}</div>}
     </form>
   );
 }

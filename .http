@@ -2,16 +2,28 @@ POST http://localhost:3001/register
 content-type: application/json
 
 {
-"email" : "danielebenedetto@mediagroup98.com",
+"email" : "daniele.benedetto@mediagroup98.com",
 "password": "tdsotm1"
 }
 
-POST http://localhost:3002/posts
-content-type: application/json
+PUT http://localhost:3001/users/1
+Accept: application/json
+Content-Type: application/json
 
 {
-"title" : "Titolo in post",
-"password": "Contenuto in post"
+"email" : "daniele@gmail.it"
 }
 
-GET http://localhost:3002/posts
+PUT http://localhost:3001/posts/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title": "Post di "
+}
+
+GET http://localhost:3001/users/1
+
+GET http://localhost:3001/users?email=danielebenedetto@mediagroup98.com
+
+PUT http://localhost:3001/users?email=danielebenedetto@mediagroup98.com

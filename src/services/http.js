@@ -29,7 +29,7 @@ class Http {
     initHttp() {
 
         const http = axios.create({
-            baseURL: 'http://localhost:3001' || 'http://localhost:8000',
+            baseURL: 'http://localhost:3002' || 'http://localhost:3001' || 'http://localhost:8000',
             headers,
             withCredentials: true,
         });
@@ -63,6 +63,9 @@ class Http {
     }
     put(url,data,config){
         return this.http.put(url, data, config);
+    }
+    patch(url,data,config){
+        return this.http.patch(url, data, config);
     }
     /*
     delete(url, config){

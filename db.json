@@ -1,29 +1,67 @@
 {
   "users": [
     {
-      "email": "danielebenedetto@mediagroup98.com",
-      "password": "$2a$10$e2DIdnF.OrLPp/avmvO9De0J4Dg4o0h4prXOnBGn6s3JE.TYw2hGC",
-      "id": 1
+      "token": "",
+      "id": 1,
+      "email": "ciao@ciao.it",
+      "dai": "12345",
+      "password": "$2a$10$WaxQhQYnT4JBgH9h6nGLY.oXcM92yXa3p9fSh8Plg8X0I4fB3t/UO"
     },
     {
-      "email": "daniele.benedetto@outlook.it",
-      "password": "$2a$10$Wlu4WUr9qJZOnWoDsDKjSeXraYoKKXivhxKDS.45IpTPMQIk/R9IS",
-      "fullName": "Daniele",
-      "username": "daniele.benedetto@hotmail.it",
+      "token": "btumr9jqctif6yln1gyos4",
       "id": 2
     },
     {
-      "email": "daniele.benedetto@hotmail.it",
-      "password": "$2a$10$/F7TkwDwzraTljXisD4IYeqDGARSiSm8gUvZH42aUbqWNOT98QRbG",
+      "token": "r73mi6v2v8fkn5hv0ejyjf",
+      "id": 3
+    },
+    {
+      "dai": "uhs865rh4athqxs8a0fu",
+      "id": 4
+    },
+    {
+      "email": "daniele.benedetto@outlook.it",
+      "password": "$2a$10$gXh2xNLlpdeUwDUpDmkQhOfGKmbMvDDLXggN5N7TJYfriMkWpp1Ii",
       "fullName": "Daniele Benedetto",
       "username": "daniele.benedetto",
-      "id": 3
+      "id": 5,
+      "token": ""
+    },
+    {
+      "email": "daniele.benedetto@mediagroup98.com",
+      "password": "$2a$10$b2i69m3Y2MvCvFvBc/keT.8ECx2pBCU4OneUPZjLy9YSSQZybqAie",
+      "fullName": "Daniele Benedetto",
+      "username": "daniele.benedetto",
+      "id": 6
+    },
+    {
+      "email": "daniele.benedetto@hotmail.it",
+      "password": "$2a$10$DM1fCnmlZKBAOrT/dTBQqOBMnc9.PAxs6Q.S05K6KURcvzS0yYaBC",
+      "fullName": "Daniele Benedetto",
+      "username": "admin",
+      "id": 7,
+      "token": ""
+    },
+    {
+      "email": "danielebenedetto@mediagroup98.com",
+      "password": "$2a$10$jPhNSnAswQyGcsyRe52EPu3molGYDcI7sxL/xxDjP4Jz0SL2xchja",
+      "fullName": "Daniele Benedetto",
+      "username": "daniele.frfr",
+      "id": 8,
+      "token": ""
+    },
+    {
+      "email": "daniele.benedetto@outlook.com",
+      "password": "$2a$10$RKfBYxjwXw0fjS/6Lyr9COuGB4UflKL8jf8Q.c03pVMHup8KZEOxm",
+      "fullName": "Daniele Benedetto",
+      "username": "admin",
+      "id": 9,
+      "token": ""
     }
   ],
   "posts": [
     {
-      "title": "Post di test",
-      "content": "Contenuto di test",
+      "title": "Post di ",
       "id": 1
     },
     {

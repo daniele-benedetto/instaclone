@@ -5,6 +5,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import LostPassawordPage from './pages/LostPasswordPage';
 import PostPage from "./pages/PostPage";
+import ResetPasswordPage from "./pages/ResetPasswordPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/register" element={ <RegisterPage />} />
         <Route path="/lost-password" element={ <LostPassawordPage />} />
         <Route path="/add-post" element={ <PostPage /> } />
+        <Route path="/reset-password" element={ <ResetPasswordPage /> } />
       </Routes>
     </div>
   );
