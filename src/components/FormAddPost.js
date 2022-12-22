@@ -8,7 +8,6 @@ const FormAddPost = ({onAddPost,error}) => {
   const [form, setForm] = useState({
     caption: '',
     time: new Date(),
-    userId: '',
   });
 
   const [formError, setFormError] = useState({
@@ -29,7 +28,7 @@ const FormAddPost = ({onAddPost,error}) => {
 
     setFormError({
         ...formError,
-        camption: !captionValid,
+        caption: !captionValid,
     });
 
     return formValid;
@@ -37,7 +36,7 @@ const FormAddPost = ({onAddPost,error}) => {
 
   const handlePost = () => {
     if(handleValidForm()){
-      onAddPost(form)
+      onAddPost(form);
     }
   }
 
@@ -52,7 +51,7 @@ const FormAddPost = ({onAddPost,error}) => {
           const val = event.target.value;
           setForm({ ...form, caption: val });
         }}
-        error={formError.title}
+        error={formError.caption}
       />
       <Button
         title="Accedi"

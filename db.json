@@ -1,95 +1,42 @@
 {
   "users": [
     {
-      "token": "",
+      "email": "daniele.benedetto@mediagroup98.com",
+      "password": "$2a$10$cDXWrkLcBUYhvBO5FPz76OB/fxCVHLtyuFUbZCKVhjb0YoK/FZjdO",
+      "fullName": "Daniele Benedetto",
+      "username": "daniele.benedetto",
       "id": 1,
-      "email": "ciao@ciao.it",
-      "dai": "12345",
-      "password": "$2a$10$WaxQhQYnT4JBgH9h6nGLY.oXcM92yXa3p9fSh8Plg8X0I4fB3t/UO"
-    },
-    {
-      "token": "btumr9jqctif6yln1gyos4",
-      "id": 2
-    },
-    {
-      "token": "r73mi6v2v8fkn5hv0ejyjf",
-      "id": 3
-    },
-    {
-      "dai": "uhs865rh4athqxs8a0fu",
-      "id": 4
+      "token": ""
     },
     {
       "email": "daniele.benedetto@outlook.it",
-      "password": "$2a$10$gXh2xNLlpdeUwDUpDmkQhOfGKmbMvDDLXggN5N7TJYfriMkWpp1Ii",
+      "password": "$2a$10$1m/Enf88/iC/mYN1QE2BsOMJQvp3gOqgEZ0iywbi35P729Nk.iLrq",
       "fullName": "Daniele Benedetto",
       "username": "daniele.benedetto",
-      "id": 5,
-      "token": ""
-    },
-    {
-      "email": "daniele.benedetto@mediagroup98.com",
-      "password": "$2a$10$b2i69m3Y2MvCvFvBc/keT.8ECx2pBCU4OneUPZjLy9YSSQZybqAie",
-      "fullName": "Daniele Benedetto",
-      "username": "daniele.benedetto",
-      "id": 6
-    },
-    {
-      "email": "daniele.benedetto@hotmail.it",
-      "password": "$2a$10$DM1fCnmlZKBAOrT/dTBQqOBMnc9.PAxs6Q.S05K6KURcvzS0yYaBC",
-      "fullName": "Daniele Benedetto",
-      "username": "admin",
-      "id": 7,
-      "token": ""
-    },
-    {
-      "email": "danielebenedetto@mediagroup98.com",
-      "password": "$2a$10$jPhNSnAswQyGcsyRe52EPu3molGYDcI7sxL/xxDjP4Jz0SL2xchja",
-      "fullName": "Daniele Benedetto",
-      "username": "daniele.frfr",
-      "id": 8,
-      "token": ""
-    },
-    {
-      "email": "daniele.benedetto@outlook.com",
-      "password": "$2a$10$RKfBYxjwXw0fjS/6Lyr9COuGB4UflKL8jf8Q.c03pVMHup8KZEOxm",
-      "fullName": "Daniele Benedetto",
-      "username": "admin",
-      "id": 9,
-      "token": ""
-    }
-  ],
-  "posts": [
-    {
-      "title": "Post di ",
-      "id": 1
-    },
-    {
-      "title": "dedede",
-      "content": "dededed",
-      "position": "",
-      "image": "ededed",
-      "time": "2022-12-19T17:00:52.662Z",
-      "userId": "",
       "id": 2
     },
     {
-      "caption": "ciaoooo ",
-      "time": "2022-12-19T18:49:47.751Z",
-      "userId": "",
+      "email": "daniele.benedetto@mediag.com",
+      "password": "$2a$10$s41n/21dMiMy7ZuGbcmEEe/T.oa4DLm3fK2H2wL0shHtXK/H3jKk.",
+      "fullName": "Daniele Benedetto",
+      "username": "admin",
       "id": 3
     },
     {
-      "caption": "ue",
-      "time": "2022-12-19T19:23:12.939Z",
-      "userId": "",
+      "email": "daniele.benedetto@media.com",
+      "password": "$2a$10$U..ajtrB/yivWz3rYbZxTOPdBcnJFT42MjICnMH3OYQC8ayZvaMnu",
+      "fullName": "Daniele Benedetto",
+      "username": "admin",
       "id": 4
     },
     {
-      "caption": "fefrfrfrr",
-      "time": "2022-12-19T19:27:40.627Z",
-      "userId": "",
-      "id": 5
+      "email": "daniele.benedetto@mediag8.com",
+      "password": "$2a$10$/puEQw5tV75Wui5ePOFjxOmC7sqONGG7sXkqFlMiKlTcv4XffbTdW",
+      "fullName": "Daniele Benedetto",
+      "username": "admin",
+      "id": 5,
+      "token": ""
     }
-  ]
+  ],
+  "posts": []
 }

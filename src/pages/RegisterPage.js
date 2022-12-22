@@ -27,12 +27,28 @@ const RegisterPage = () => {
 
   },[]);
 
-  const saveData = (data) => {
-    localStorage.setItem("auth",data);
+  const saveData = (auth, id) => {
+    localStorage.setItem("auth",auth);
+    localStorage.setItem("id", id);
   }
 
   const redirect = () => {
     navigate("/")
+  }
+
+  const getError = (message) => {
+
+    switch(message) {
+
+      case 'Email already exists': {
+        setError('Email già in uso');
+        break;
+      }
+
+      default: {
+        setError(message);
+      }
+    }
   }
 
   const handleRegister = (formToSend) => {
@@ -40,11 +56,12 @@ const RegisterPage = () => {
         formToSend
     ).then((data)=> {
         const accessToken = data.accessToken;
-        saveData(accessToken);
+        const userId = data.user.id;
+        saveData(accessToken, userId);
         redirect();
     }).catch((response) => {
         const message = response.data;
-        setError(message)
+        getError(message);
     })
   }
 

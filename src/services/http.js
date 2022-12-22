@@ -29,7 +29,7 @@ class Http {
     initHttp() {
 
         const http = axios.create({
-            baseURL: 'http://localhost:3002' || 'http://localhost:3001' || 'http://localhost:8000',
+            baseURL: 'http://localhost:3001'|| 'http://localhost:8000',
             headers,
             withCredentials: true,
         });
@@ -74,7 +74,6 @@ class Http {
     */
 
     handleError(error) {
-        console.log("handleError");
         if (error) {
             const { status } = error;
             
@@ -96,11 +95,11 @@ class Http {
                     // Handle TooManyRequests
                     break;
                 }
+                case 400: {
+                    //User not found, Password not correct
+                    break;
+                }
             }
-        } else {
-            /* toast.error('🆘 No internet connection found. App is running in offline mode.', {
-                toastId: "no_internet_connection"
-            }); */
         }
     }
 }

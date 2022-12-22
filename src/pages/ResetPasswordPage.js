@@ -31,25 +31,24 @@ const ResetPasswordPage = () => {
   }
 
   const resetPassword = (data, password) => {
-
+        
     const userObj = {
-      "password" : `${password}`,
+      "password" : password,
       "token" : ''
-    }
-
+    };
+        
     patchTokenService(data, userObj);
-    redirect("/login")
+    redirect("/login");
   }  
-
+ 
   const onResetPassword = async (formToSend) => {
     setMessage('');
 		const data = await getUserService('token', formToSend.token);
+
     if(data.length > 0) {
-      const bcrypt = require('bcryptjs');
-      const hash = bcrypt.hashSync(formToSend.password, 6);
-      resetPassword(data[0].id, hash);
+      resetPassword(data[0].id, formToSend.password);
     } else {
-      setMessage('Nessun utente corrisponde a questa email');
+      setMessage('Il Token non è valido');
     }
   }
 

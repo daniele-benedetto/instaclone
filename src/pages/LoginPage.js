@@ -34,6 +34,26 @@ const LoginPage = () => {
     navigate("/")
   }
 
+  const getError = (message) => {
+
+    switch(message) {
+
+      case 'Cannot find user': {
+        setError('Nessun utente trovato');
+        break;
+      }
+
+      case 'Incorrect password': {
+        setError('Password non corretta');
+        break;
+      }
+
+      default: {
+        setError(message);
+      }
+    }
+  }
+
   const handleLogin = (formToSend) => {
     postLoginService(
         formToSend
@@ -43,7 +63,7 @@ const LoginPage = () => {
         redirect();
     }).catch((response) => {
         const message = response.data;
-        setError(message)
+        getError(message);
     })
   }
 

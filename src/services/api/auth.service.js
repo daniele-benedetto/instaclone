@@ -1,5 +1,5 @@
 import { http } from "../http";
-import { generateUrl, loginUrl, registerUrl, usersUrl } from "../url";
+import { generateUrl, loginUrl, registerUrl, usersUrl, userWithAuthUrl } from "../url";
 
 export const postLoginService = async (loginPayload) => {
     const { data } = await http.post(loginUrl, loginPayload);
@@ -13,7 +13,6 @@ export const postRegisterService = async (registerPayload) => {
 
 export const getUserService = async (key, value) => {
 
-    console.log(value)
     const params = [
         {key: key, value: value},
     ];
@@ -28,4 +27,10 @@ export const patchTokenService = async (id, user) => {
     const url = `${usersUrl}/${id}`;
     const { data } = await http.patch(url, user);
     return data;
+}
+
+export const postUserWithAuthService = async (userId, service, dataPayload) => {
+    const url = `${userWithAuthUrl}/${userId}/${service}`;
+    const { data } = await http.post(url, dataPayload);
+    return { data };
 }

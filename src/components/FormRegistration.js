@@ -97,7 +97,7 @@ const FormRegistration = ({onRegister,error}) => {
           const val = event.target.value;
           setForm({ ...form, username: val });
         }}
-        error={formError.fullName}
+        error={formError.username}
       />
       <Input 
         type='password'

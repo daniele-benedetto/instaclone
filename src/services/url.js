@@ -1,7 +1,8 @@
 const loginUrl = "/login";
 const registerUrl = "/register";
 const postsUrl = "/posts";
-const usersUrl = "/users"
+const usersUrl = "/users";
+const userWithAuthUrl = "/664/users";
 
 const generateUrl = (url, params = []) => {
 	const urlServerWithAuth = `${process.env.REACT_APP_URL}${url}?`;
@@ -18,4 +19,4 @@ const generateUrl = (url, params = []) => {
 	return urlServerWithAuth;
 }
 
-export { loginUrl ,registerUrl, postsUrl, usersUrl, generateUrl};
+export { loginUrl ,registerUrl, postsUrl, usersUrl, userWithAuthUrl, generateUrl};
