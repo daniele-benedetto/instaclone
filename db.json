@@ -2,41 +2,55 @@
   "users": [
     {
       "email": "daniele.benedetto@mediagroup98.com",
-      "password": "$2a$10$cDXWrkLcBUYhvBO5FPz76OB/fxCVHLtyuFUbZCKVhjb0YoK/FZjdO",
+      "password": "$2a$10$hSwToP9rLGyHxQVBUemk8u9JHmL0lHNEz3gt5BQWYenckxoBa1mNm",
       "fullName": "Daniele Benedetto",
       "username": "daniele.benedetto",
       "id": 1,
-      "token": ""
+      "image": "profile",
+      "token": "9bm4cg17ibg9u1qtvl2zic"
+    }
+  ],
+  "posts": [
+    {
+      "likes": {
+        "users": [
+          {
+            "userId": 20
+          },
+          {
+            "userId": 10
+          }
+        ]
+      },
+      "id": 1
     },
     {
-      "email": "daniele.benedetto@outlook.it",
-      "password": "$2a$10$1m/Enf88/iC/mYN1QE2BsOMJQvp3gOqgEZ0iywbi35P729Nk.iLrq",
-      "fullName": "Daniele Benedetto",
-      "username": "daniele.benedetto",
+      "caption": "ciao mondo",
+      "position": "Piazza Giuseppe Verdi, 40126 Bologna BO, Italia",
+      "image": "https://picsum.photos/id/1027/150/150",
+      "time": "2022-12-22T15:20:49.279Z",
+      "userId": "1",
       "id": 2
     },
     {
-      "email": "daniele.benedetto@mediag.com",
-      "password": "$2a$10$s41n/21dMiMy7ZuGbcmEEe/T.oa4DLm3fK2H2wL0shHtXK/H3jKk.",
-      "fullName": "Daniele Benedetto",
-      "username": "admin",
+      "caption": "ciao mondo",
+      "position": "Via Nino Oxilia, 4, 28100 Novara NO, Italia",
+      "image": [
+        {}
+      ],
+      "time": "2022-12-22T15:41:22.588Z",
+      "userId": "1",
       "id": 3
     },
     {
-      "email": "daniele.benedetto@media.com",
-      "password": "$2a$10$U..ajtrB/yivWz3rYbZxTOPdBcnJFT42MjICnMH3OYQC8ayZvaMnu",
-      "fullName": "Daniele Benedetto",
-      "username": "admin",
+      "caption": "ciao",
+      "position": "Cianjur, Reggenza di Cianjur, Giava Occidentale, Indonesia",
+      "image": [
+        {}
+      ],
+      "time": "2022-12-22T15:58:22.878Z",
+      "userId": "1",
       "id": 4
-    },
-    {
-      "email": "daniele.benedetto@mediag8.com",
-      "password": "$2a$10$/puEQw5tV75Wui5ePOFjxOmC7sqONGG7sXkqFlMiKlTcv4XffbTdW",
-      "fullName": "Daniele Benedetto",
-      "username": "admin",
-      "id": 5,
-      "token": ""
     }
-  ],
-  "posts": []
+  ]
 }

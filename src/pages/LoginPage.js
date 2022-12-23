@@ -26,12 +26,13 @@ const LoginPage = () => {
 
   },[]);
 
-  const saveData = (data) => {
-    localStorage.setItem("auth",data);
-  }
-
   const redirect = () => {
     navigate("/")
+  }
+
+  const saveData = (auth, id) => {
+    localStorage.setItem("auth",auth);
+    localStorage.setItem("id", id);
   }
 
   const getError = (message) => {
@@ -59,7 +60,8 @@ const LoginPage = () => {
         formToSend
     ).then((data)=> {
         const accessToken = data.accessToken;
-        saveData(accessToken);
+        const userId = data.user.id;
+        saveData(accessToken, userId);
         redirect();
     }).catch((response) => {
         const message = response.data;

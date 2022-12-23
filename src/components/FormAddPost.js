@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 
 import Button from './ui/Button';
 import TextArea from './ui/TextArea';
+import Position from './ui/Position';
+import { File } from './ui/Files/File';
 
 const FormAddPost = ({onAddPost,error}) => {
 
   const [form, setForm] = useState({
     caption: '',
+    position: '',
+    image: '',
     time: new Date(),
   });
 
@@ -17,13 +21,17 @@ const FormAddPost = ({onAddPost,error}) => {
   const handleValidForm = () => {
 
     let captionValid = true;
+    let imageValid = true;
     let formValid = true;
-
-
 
     if(form.caption === ""){
       formValid = false;
       captionValid = false;
+    }
+
+    if(form.image === ""){
+      formValid = false;
+      imageValid = false;
     }
 
     setFormError({
@@ -53,12 +61,19 @@ const FormAddPost = ({onAddPost,error}) => {
         }}
         error={formError.caption}
       />
+      <Position setForm={setForm} form={form} />
+      <File
+        id="image"
+        onAddFile={(image) => {
+          setForm({ ...form, image: image });
+          console.log(form)
+        }}
+      />
       <Button
-        title="Accedi"
+        title="Posta"
         styleBtn="primary"
         onClick={handlePost}
       />
-
       {error && <div>{error}</div>}
     </form>
   );

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getPost } from '../services/api/posts.service';
+import { getPostService } from '../services/api/posts.service';
 import PostsContainer from './layouts/PostsContainer';
 import Post from './ui/Post';
 
@@ -8,12 +8,12 @@ const Posts = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    getPost().then((response)=> {
+    getPostService().then((response)=> {
       setPosts(response);
     }).catch((error) => {
-      console.log(error)
+      console.log(error);
     });
-  }, [])
+  }, []);
 
   return (
     <PostsContainer>
@@ -21,11 +21,12 @@ const Posts = () => {
         return (
           <Post
             key={post.id}
-            name='Daniele Benedetto'
-            profile='https://picsum.photos/id/1027/150/150'
-            position='Asheville, North Carolina'
-            image='https://picsum.photos/id/244/900/900'
-            likes={55}
+            name={post.user.fullName}
+            username={post.user.username}
+            profile={post.user.image}
+            position={post.position}
+            image={post.image}
+            likes={post.likes}
             caption={post.caption}
           />
         );

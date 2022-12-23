@@ -57,6 +57,7 @@ const RegisterPage = () => {
     ).then((data)=> {
         const accessToken = data.accessToken;
         const userId = data.user.id;
+        console.log(data)
         saveData(accessToken, userId);
         redirect();
     }).catch((response) => {

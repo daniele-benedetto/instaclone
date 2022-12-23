@@ -10,6 +10,7 @@ const FormRegistration = ({onRegister,error}) => {
     fullName: '',
     username: '',
     password: '',
+    image: 'profile',
   });
 
   const [formError, setFormError] = useState({
