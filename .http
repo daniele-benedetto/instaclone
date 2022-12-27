@@ -46,7 +46,9 @@ GET http://localhost:3001/users?ciao=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbW
 
 GET http://localhost:3001/posts/1/userId
 
-GET http://localhost:3001/posts?_expand=user
+GET http://localhost:3001/likes?_expand=posts
+GET http://localhost:3001/posts/1?_embed=likes
+
 
 PATCH   http://localhost:3001/posts/1
 Content-Type: application/json
@@ -54,3 +56,5 @@ Content-Type: application/json
 {
     "likes": {"users": [{"userId": 40}, {"userId": 50}]}
 }
+
+DELETE http://localhost:3001/likes/2

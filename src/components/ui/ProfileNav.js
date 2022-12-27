@@ -2,14 +2,10 @@ import React from 'react';
 
 import NavContainer from '../layouts/NavContainer';
 
-import Logo from './Logo';
 import NavItem from './NavItem';
-
-import LogoImage from '../../images/logo.png';
 
 import PlusIcons from '../icons/PlusIcons';
 import HeartIcon from '../icons/HeartIcon';
-import SendIcon from '../icons/SendIcon';
 
 const navItem = [
   {
@@ -21,19 +17,14 @@ const navItem = [
     id:2,
     slug: '/',
     icon: <HeartIcon />,
-  },
-  {
-    id:3,
-    slug: '/',
-    icon: <SendIcon />,
-  },
+  }
 ];
 
-const TopNav = () => {
+const ProfileNav = () => {
   return (
     <NavContainer styleNav="top">
-      <div className='w-1/3'>
-        <Logo src={LogoImage} />
+      <div className='w-1/3 font-bold mt-2'>
+        benedetto.daniele
       </div>       
       <div className='w-2/3 flex justify-end'>
         {navItem.map(item => {
@@ -50,4 +41,4 @@ const TopNav = () => {
   );
 }
 
-export default TopNav;
+export default ProfileNav;

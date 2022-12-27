@@ -66,7 +66,6 @@ const FormAddPost = ({onAddPost,error}) => {
         id="image"
         onAddFile={(image) => {
           setForm({ ...form, image: image });
-          console.log(form)
         }}
       />
       <Button

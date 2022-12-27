@@ -31,10 +31,10 @@ const stories = [
   }
 ];
 
-const StoriesNav = () => {
+const NavStories = () => {
   
   return (
-      <NavContainer styleNav="stories">
+      <NavContainer styleNav="middle">
         {stories.map(story => {
           return(
             <StoryItem 
@@ -49,4 +49,4 @@ const StoriesNav = () => {
   );
 }
 
-export default StoriesNav;
+export default NavStories;

@@ -3,18 +3,18 @@ import React from 'react';
 import RequireAuth from '../components/layouts/RequireAuth';
 import Posts from '../components/Posts';
 
-import BottomNav from '../components/ui/BottomNav';
-import StoriesNav from '../components/ui/StoriesNav';
-import TopNav from '../components/ui/TopNav';
+import NavBottom from '../components/ui/NavBottom';
+import NavStories from '../components/ui/NavStories';
+import NavTop from '../components/ui/NavTop';
 
 const HomePage = () => {
   return (
   <RequireAuth>
     <div className='HomePage'>
-      <TopNav />
-      <StoriesNav />
+      <NavTop />
+      <NavStories />
       <Posts />
-      <BottomNav />
+      <NavBottom />
     </div>
   </RequireAuth>
   );

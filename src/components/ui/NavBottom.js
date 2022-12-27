@@ -23,9 +23,14 @@ const navItem = [
     slug: '/add-post',
     icon: <PlusIcons />,
   },
+  {
+    id: 4,
+    slug: '/profile',
+    icon:  <img className="h-8 w-8 rounded-full" src={require(`../../images/profile.png`)}/>
+  }
 ];
 
-const BottomNav = () => {
+const NavBottom = () => {
   return (
     <NavContainer styleNav="bottom">        
       {navItem.map(item => {
@@ -42,4 +47,4 @@ const BottomNav = () => {
   );
 }
 
-export default BottomNav;
+export default NavBottom;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import RequireAuth from '../components/layouts/RequireAuth';
-import { postUserWithAuthService } from '../services/api/auth.service';
+import { postWithAuthService } from '../services/api/auth.service';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ const PostPage = () => {
 
   const onAddPost = (formToSend) => {
     const userId = localStorage.getItem("id");
-    postUserWithAuthService(
+    postWithAuthService(
       userId, 'posts', formToSend
     ).then(()=> {
       redirect();

@@ -29,7 +29,7 @@ export const patchTokenService = async (id, user) => {
     return data;
 }
 
-export const postUserWithAuthService = async (userId, service, dataPayload) => {
+export const postWithAuthService = async (userId, service, dataPayload) => {
     const url = `${userWithAuthUrl}/${userId}/${service}`;
     const { data } = await http.post(url, dataPayload);
     return { data };

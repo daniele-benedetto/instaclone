@@ -67,11 +67,9 @@ class Http {
     patch(url,data,config){
         return this.http.patch(url, data, config);
     }
-    /*
     delete(url, config){
-        return this.http.delete<T, R>(url, config);
+        return this.http.delete(url, config);
     }
-    */
 
     handleError(error) {
         if (error) {

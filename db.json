@@ -2,55 +2,136 @@
   "users": [
     {
       "email": "daniele.benedetto@mediagroup98.com",
-      "password": "$2a$10$hSwToP9rLGyHxQVBUemk8u9JHmL0lHNEz3gt5BQWYenckxoBa1mNm",
+      "password": "$2a$10$CQBz6lEGATruP3mGI9XJ7.Es8ZbLtMSNzmkyGhsIBx18NpvS1p2rq",
       "fullName": "Daniele Benedetto",
       "username": "daniele.benedetto",
-      "id": 1,
       "image": "profile",
-      "token": "9bm4cg17ibg9u1qtvl2zic"
+      "id": 1
+    },
+    {
+      "email": "daniele.benedetto@hotmail.it",
+      "password": "$2a$10$AF6QN7WiYLPshULQ/vmmnes3yaYZpXIJZvmYgw1i9/IZA2c2N77rO",
+      "fullName": "Daniele Benedetto",
+      "username": "daniele.benedetto",
+      "image": "profile",
+      "id": 2
+    },
+    {
+      "email": "daniele.benedetto@outlook.it",
+      "password": "$2a$10$IKoVnswPhWc6JOLVW7xSIug7ugQDAAW6XSSF2jZUWWNR069kSOrzm",
+      "fullName": "Daniele Benedetto",
+      "username": "daniele.benedetto",
+      "image": "profile",
+      "id": 3
     }
   ],
   "posts": [
     {
-      "likes": {
-        "users": [
-          {
-            "userId": 20
-          },
-          {
-            "userId": 10
-          }
-        ]
-      },
+      "caption": "Questa è la descrizione della mia foto",
+      "position": "Modena MO, Italia",
+      "image": "https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "time": "2022-12-27T13:20:48.416Z",
+      "userId": "1",
       "id": 1
     },
     {
-      "caption": "ciao mondo",
-      "position": "Piazza Giuseppe Verdi, 40126 Bologna BO, Italia",
-      "image": "https://picsum.photos/id/1027/150/150",
-      "time": "2022-12-22T15:20:49.279Z",
+      "caption": "Questa è la descrizione della mia foto",
+      "position": "Modena MO, Italia",
+      "image": "https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "time": "2022-12-27T13:20:48.416Z",
+      "userId": "2",
+      "id": 2
+    }
+  ],
+  "likes": [
+    {
+      "userId": "1",
+      "postId": 2,
+      "id": 1
+    },
+    {
+      "userId": "1",
+      "postId": 1,
+      "id": 2
+    },
+    {
+      "userId": "3",
+      "postId": 1,
+      "id": 3
+    },
+    {
+      "userId": "2",
+      "postId": 2,
+      "id": 7
+    },
+    {
+      "userId": "2",
+      "postId": 1,
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "comment": "ciaoooo",
+      "time": "2022-12-27T16:41:19.882Z",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "comment": "ciaoooo",
+      "time": "2022-12-27T16:42:03.086Z",
+      "postId": 1,
       "userId": "1",
       "id": 2
     },
     {
-      "caption": "ciao mondo",
-      "position": "Via Nino Oxilia, 4, 28100 Novara NO, Italia",
-      "image": [
-        {}
-      ],
-      "time": "2022-12-22T15:41:22.588Z",
+      "comment": "ciao mondo",
+      "time": "2022-12-27T16:42:44.870Z",
+      "postId": 2,
       "userId": "1",
       "id": 3
     },
     {
-      "caption": "ciao",
-      "position": "Cianjur, Reggenza di Cianjur, Giava Occidentale, Indonesia",
-      "image": [
-        {}
-      ],
-      "time": "2022-12-22T15:58:22.878Z",
+      "comment": "ciao mondo amore mio",
+      "time": "2022-12-27T16:42:44.871Z",
+      "postId": 1,
       "userId": "1",
       "id": 4
+    },
+    {
+      "comment": "ciao mondo amore mio",
+      "time": "2022-12-27T16:42:44.871Z",
+      "postId": 1,
+      "userId": "1",
+      "id": 5
+    },
+    {
+      "comment": "ciao mondo",
+      "time": "2022-12-27T16:42:44.870Z",
+      "postId": 2,
+      "userId": "1",
+      "id": 6
+    },
+    {
+      "comment": "Addio mondo crudele",
+      "time": "2022-12-27T16:53:31.789Z",
+      "postId": 1,
+      "userId": "2",
+      "id": 7
+    },
+    {
+      "comment": "Addio mondo crudele",
+      "time": "2022-12-27T16:53:31.789Z",
+      "postId": 1,
+      "userId": "2",
+      "id": 8
+    },
+    {
+      "comment": "ciaooooo",
+      "time": "2022-12-27T16:53:31.789Z",
+      "postId": 1,
+      "userId": "2",
+      "id": 9
     }
   ]
 }

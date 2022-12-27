@@ -2,7 +2,9 @@ const loginUrl = "/login";
 const registerUrl = "/register";
 
 const postsUrl = "/posts";
-const postsUrlExpandUser = "/posts?_expand=user&_sort=id&_order=desc";
+const postsUrlExpand = "/posts?_expand=user&_embed=likes&_sort=id&_order=desc";
+
+const likesUrl = "/likes";
 
 const usersUrl = "/users";
 const userWithAuthUrl = "/664/users";
@@ -22,4 +24,4 @@ const generateUrl = (url, params = []) => {
 	return urlServerWithAuth;
 }
 
-export { loginUrl ,registerUrl, postsUrl, postsUrlExpandUser, usersUrl, userWithAuthUrl, generateUrl};
+export { loginUrl ,registerUrl, postsUrl, postsUrlExpand, usersUrl, userWithAuthUrl, generateUrl, likesUrl};

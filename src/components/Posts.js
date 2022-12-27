@@ -21,6 +21,7 @@ const Posts = () => {
         return (
           <Post
             key={post.id}
+            id={post.id}
             name={post.user.fullName}
             username={post.user.username}
             profile={post.user.image}

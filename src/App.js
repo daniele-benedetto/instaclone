@@ -6,6 +6,7 @@ import RegisterPage from "./pages/RegisterPage";
 import LostPassawordPage from './pages/LostPasswordPage';
 import PostPage from "./pages/PostPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/lost-password" element={ <LostPassawordPage />} />
         <Route path="/add-post" element={ <PostPage /> } />
         <Route path="/reset-password" element={ <ResetPasswordPage /> } />
+        <Route path="/profile" element={ <ProfilePage /> } />
       </Routes>
     </div>
   );
