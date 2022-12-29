@@ -1,5 +1,5 @@
 import { http } from "../http";
-import { postsUrl, likesUrl, generateUrl } from "../url";
+import { postsUrl, likesUrl, generateUrl, usersUrl } from "../url";
 
 export const getPostsService = async () => {
 
@@ -27,6 +27,13 @@ export const getPostElementService = async (id, service) => {
     const urlWithParams = generateUrl(url, params);
 
     const { data } = await http.get(urlWithParams);
+    return data;
+}
+
+export const getUserElementService = async (id, service) => {
+    const url = `${usersUrl}/${id}/${service}`;
+
+    const { data } = await http.get(url);
     return data;
 }
 

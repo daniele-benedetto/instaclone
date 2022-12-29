@@ -10,7 +10,6 @@ const Likes = ({id}) => {
   useEffect(() => {
     getPostElementService(id, 'likes').then((response)=> {
       setLikes(response);
-      console.log(likes)
     }).catch((error) => {
       console.log(error);
     });

@@ -15,6 +15,7 @@ export const getUserService = async (key, value) => {
 
     const params = [
         {key: key, value: value},
+        {key: '_embed', value: 'posts'},
     ];
 
     const url = generateUrl(usersUrl, params);

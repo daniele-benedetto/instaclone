@@ -13,7 +13,6 @@ const Comments = ({id}) => {
   const getComments = () => {
     getPostElementService(id, 'comments').then((response)=> {
       setComments(response);
-      console.log(comments);
     }).catch((error) => {
       console.log(error);
     });

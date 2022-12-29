@@ -11,8 +11,6 @@ import FormAddPost from '../components/FormAddPost';
 import NavSub from '../components/ui/NavSub';
 import NavBottom from '../components/ui/NavBottom';
 
-import axios from 'axios';
-
 const AddPostPage = () => {
   
   const navigate = useNavigate();
@@ -24,7 +22,16 @@ const AddPostPage = () => {
   }
 
   const onAddPost = (formToSend) => {
-    console.log(formToSend);
+    const userId = localStorage.getItem("id");
+    postWithAuthService(
+      userId, 'posts', formToSend
+    ).then(()=> {
+      redirect();
+    }).catch((response) => {
+      const message = response.data;
+      setError(message);
+    });
+
   }
 
   return (

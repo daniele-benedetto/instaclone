@@ -7,6 +7,8 @@ import SearchIcon from '../icons/SearchIcon';
 import NavContainer from '../layouts/NavContainer';
 import NavItem from './NavItem';
 
+const userId = localStorage.getItem("id");
+
 const navItem = [
   {
     id: 1,
@@ -25,7 +27,7 @@ const navItem = [
   },
   {
     id: 4,
-    slug: '/profile',
+    slug: `/profile/${userId}`,
     icon:  <img className="h-8 w-8 rounded-full" src={require(`../../images/profile.png`)}/>
   }
 ];

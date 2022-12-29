@@ -18,6 +18,17 @@ const FormAddPost = ({onAddPost,error}) => {
     caption: false
   });
 
+  const convertImageBase64 = (file) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      setForm({ ...form, image: reader.result });
+    };
+    reader.onerror = (error) => {
+      console.log(error);
+    };
+  }
+
   const handleValidForm = () => {
 
     let captionValid = true;
@@ -65,7 +76,9 @@ const FormAddPost = ({onAddPost,error}) => {
       <File
         id="image"
         onAddFile={(image) => {
-          setForm({ ...form, image: image[0] });
+          if(image[0]) {
+            convertImageBase64(image[0]);
+          }
         }}
       />
       <Button

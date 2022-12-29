@@ -8,7 +8,7 @@ const FormAddComment = ({onAddComment,id}) => {
   const [form, setForm] = useState({
     comment: '',
     time: new Date(),
-    postId: id,
+    postId: parseInt(id),
   });
 
   const [formError, setFormError] = useState({

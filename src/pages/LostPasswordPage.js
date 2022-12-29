@@ -63,7 +63,6 @@ const LoginPage = () => {
   const handleLostPassword = async (formToSend) => {
     setMessage('');
 		const data = await getUserService('email', formToSend);
-    console.log(data);
     if(data.length > 0) {
       sendResetPassword(data[0].id);
     } else {

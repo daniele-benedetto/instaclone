@@ -45,6 +45,7 @@ GET http://localhost:3001/users?ciao=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbW
 
 GET http://localhost:3001/668/users/1
 
+GET http://localhost:3001/users/1/posts
 
 GET http://localhost:3001/posts/1/userId
 
