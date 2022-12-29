@@ -1,24 +1,9 @@
 import React, { useState } from 'react';
-import { postWithAuthService } from '../../services/api/auth.service';
-import FormAddComment from '../FormAddComment';
-import BookmarkIcon from '../icons/BookmarkIcon';
-import CommentIcon from '../icons/CommentIcon';
-import HeartIcon from '../icons/HeartIcon';
-import SendIcon from '../icons/SendIcon';
+import { Link } from 'react-router-dom';
 
+import NavPost from './NavPost';
 
-const Post = ({id, name, position, image, likes, profile, caption, username}) => {
-
-  const [likesCount, setLikesCount] = useState(likes.length);
-
-  const onAddComment = (formToSend) => {
-    const userId = localStorage.getItem("id");
-    postWithAuthService(
-      userId, 'comments', formToSend
-    ).then(()=> {
-    }).catch((response) => {
-    });
-  }
+const Post = ({id, name, position, image, likes, profile, caption, username, getPost}) => {
 
   return (
     <div className="bg-white rounded-sm max-w-md m-auto">
@@ -30,26 +15,14 @@ const Post = ({id, name, position, image, likes, profile, caption, username}) =>
         </div>
       </div>
       <img className='w-full' src={image} alt={image} />
-      <div className="flex items-center justify-between mx-4 mt-3 mb-2">
-        <div className="flex gap-5">
-          <HeartIcon id={id} setLikesCount={setLikesCount} likesCount={likesCount} likes={likes} />
-          <CommentIcon />
-          <SendIcon />
-        </div>
-        <div className="flex">
-          <BookmarkIcon />
-        </div>
-      </div>
-      { likes && <div className="font-semibold text-sm mx-4 mt-2 mb-4">
-        {likesCount} likes
-      </div>}
-      <div className="text-sm mx-4 mt-2 mb-4">
+      <NavPost id={id} likes={likes} getPost={getPost} />
+      { likes && <Link to={`/post/likes/${id}`} className="font-semibold text-sm mx-4 mt-2 mb-4">
+        {likes.length} likes
+      </Link> }
+      <div className="text-sm mx-4 mt-2">
         <b>{username}</b> {caption}
       </div>
-      <FormAddComment
-        onAddComment={(f) => onAddComment(f)}
-        id={id}
-      />
+      <Link to={`/post/comments/${id}`} className='italic text-xs mx-4 color-grey'>Visualizza tutti i commenti</Link>
     </div>
   );
 }

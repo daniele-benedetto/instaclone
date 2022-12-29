@@ -4,9 +4,11 @@ import HomePage from './pages/HomePage';
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import LostPassawordPage from './pages/LostPasswordPage';
-import PostPage from "./pages/PostPage";
+import AddPostPage from "./pages/AddPostPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 import ProfilePage from "./pages/ProfilePage";
+import CommentsPage from "./pages/CommentsPage";
+import LikesPage from "./pages/LikesPage";
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
         <Route path="/login" element={ <LoginPage />} />
         <Route path="/register" element={ <RegisterPage />} />
         <Route path="/lost-password" element={ <LostPassawordPage />} />
-        <Route path="/add-post" element={ <PostPage /> } />
+        <Route path="/add-post" element={ <AddPostPage /> } />
         <Route path="/reset-password" element={ <ResetPasswordPage /> } />
-        <Route path="/profile" element={ <ProfilePage /> } />
+        <Route path="/profile/:id" element={ <ProfilePage /> } />
+        <Route path="/post/comments/:id" element={ <CommentsPage /> } />
+        <Route path="/post/likes/:id" element={ <LikesPage /> } />
       </Routes>
     </div>
   );

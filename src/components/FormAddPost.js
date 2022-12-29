@@ -65,7 +65,7 @@ const FormAddPost = ({onAddPost,error}) => {
       <File
         id="image"
         onAddFile={(image) => {
-          setForm({ ...form, image: image });
+          setForm({ ...form, image: image[0] });
         }}
       />
       <Button

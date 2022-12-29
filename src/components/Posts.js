@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getPostService } from '../services/api/posts.service';
+import { getPostsService } from '../services/api/posts.service';
 import PostsContainer from './layouts/PostsContainer';
 import Post from './ui/Post';
 
@@ -7,12 +7,16 @@ const Posts = () => {
 
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    getPostService().then((response)=> {
+  const getPost = () => {
+    getPostsService().then((response)=> {
       setPosts(response);
     }).catch((error) => {
       console.log(error);
     });
+  }
+
+  useEffect(() => {
+    getPost();
   }, []);
 
   return (
@@ -29,6 +33,10 @@ const Posts = () => {
             image={post.image}
             likes={post.likes}
             caption={post.caption}
+            comments={post.comments}
+            setPosts={setPosts}
+            posts={posts}
+            getPost={getPost}
           />
         );
       })}

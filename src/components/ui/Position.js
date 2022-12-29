@@ -36,7 +36,7 @@ const Position = ({form, setForm}) => {
   });
 
   return (
-    <div className="mb-20 mw-350 text-left">
+    <div className="mb-20 text-left">
       <div className="input-container">
         <input
           className="w-full border rounded-md h-10 p-2 mb-3"

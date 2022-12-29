@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { postWithAuthService } from '../../services/api/auth.service';
 import { removeLikeService } from '../../services/api/posts.service';
 
-const HeartIcon = ({id, setLikesCount, likesCount, likes}) => {
+const HeartIcon = ({id, likes, getPost}) => {
 
   const [like, setLike] = useState(false);
 
@@ -33,7 +33,7 @@ const HeartIcon = ({id, setLikesCount, likesCount, likes}) => {
         userId, 'likes', data
       ).then(()=> {
         setLike(true);
-        setLikesCount(likesCount + 1);
+        getPost();
       }).catch((res) => {
         console.log(res);
       });
@@ -43,7 +43,7 @@ const HeartIcon = ({id, setLikesCount, likesCount, likes}) => {
           removeLikeService(like.id)
           .then(()=> {
             setLike(false);
-            setLikesCount(likesCount - 1);  
+            getPost();
           }).catch((res) => {
             console.log(res);
           });

@@ -43,6 +43,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllb
 
 GET http://localhost:3001/users?ciao=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbGUuYmVuZWRldHRvQG1lZGlhLmNvbSIsImlhdCI6MTY3MTY5NzM2NiwiZXhwIjoxNjcxNzAwOTY2LCJzdWIiOiIzIn0.f3QyqjhRANOTr1VMa-nT_JSyCxisK9RbHiE33bIMyKw
 
+GET http://localhost:3001/668/users/1
+
 
 GET http://localhost:3001/posts/1/userId
 
@@ -50,7 +52,7 @@ GET http://localhost:3001/likes?_expand=posts
 GET http://localhost:3001/posts/1?_embed=likes
 
 
-PATCH   http://localhost:3001/posts/1
+GET   http://localhost:3001/posts/1/comments
 Content-Type: application/json
 
 {

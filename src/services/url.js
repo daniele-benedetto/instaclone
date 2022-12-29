@@ -2,7 +2,6 @@ const loginUrl = "/login";
 const registerUrl = "/register";
 
 const postsUrl = "/posts";
-const postsUrlExpand = "/posts?_expand=user&_embed=likes&_sort=id&_order=desc";
 
 const likesUrl = "/likes";
 
@@ -24,4 +23,4 @@ const generateUrl = (url, params = []) => {
 	return urlServerWithAuth;
 }
 
-export { loginUrl ,registerUrl, postsUrl, postsUrlExpand, usersUrl, userWithAuthUrl, generateUrl, likesUrl};
+export { loginUrl ,registerUrl, postsUrl, usersUrl, userWithAuthUrl, generateUrl, likesUrl};
