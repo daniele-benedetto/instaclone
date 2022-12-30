@@ -61,3 +61,13 @@ Content-Type: application/json
 }
 
 DELETE http://localhost:3001/likes/2
+
+GET   http://localhost:3001/users/1/followers?_expand=follow
+
+POST  http://localhost:3001/664/users/1/followers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbGUuYmVuZWRldHRvQG1lZGlhZ3JvdXA5OC5jb20iLCJpYXQiOjE2NzIzMzkyMDcsImV4cCI6MTY3MjM0MjgwNywic3ViIjoiMSJ9.tD8ms3HC-A1OuiX2ZvXxULr4QRNcZwZDmx1Lzp20dhk
+
+{
+    "followId": "1"
+}
